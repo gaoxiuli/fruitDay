@@ -1,0 +1,13 @@
+.search {
+  margin: 8px;
+  color: #878787;
+  background-color: #eee;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.search i {
+  margin-right: 5px;
+  transform: scale(0.8);
+}
+/*# sourceMappingURL=kindHeader.css.map */

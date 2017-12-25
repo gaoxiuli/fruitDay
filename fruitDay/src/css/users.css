@@ -1,0 +1,65 @@
+.main {
+  margin-top: 170px;
+  width: 100%;
+}
+.main .main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ece9e5;
+  background-color: #fff;
+}
+.main .main-top p {
+  margin-left: 10px;
+}
+.main .main-top p i {
+  font-size: 28px;
+}
+.main .main-top span {
+  margin-right: 10px;
+}
+.main .main-center {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.main .main-center li {
+  width: 100%;
+  text-align: center;
+}
+.main .main-center li i {
+  font-size: 22px;
+  text-align: center;
+}
+.main .main-center li span {
+  display: block;
+  text-align: center;
+}
+.main .main-bottom {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+}
+.main .main-bottom p {
+  width: 90%;
+  height: 45px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main-bottom p span {
+  color: #878787;
+}
+.main .main-bottom p span i {
+  font-size: 16px;
+}
+.main .main-bottom p span .icon-crown,
+.main .main-bottom p span .icon-goumai,
+.main .main-bottom p span .icon-kefu {
+  font-size: 26px;
+}
+/*# sourceMappingURL=users.css.map */

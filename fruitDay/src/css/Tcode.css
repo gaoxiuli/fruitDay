@@ -1,0 +1,33 @@
+.main-code {
+  width: 100%;
+  position: relative;
+  padding-top: 5px;
+  background-color: #f9dbaa;
+}
+.main-code .move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+}
+.main-code .move #fly {
+  width: 120px;
+}
+.main-code #member {
+  width: 100%;
+}
+.main-code .tCode #code {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+.main-code .tCode em {
+  display: block;
+  position: absolute;
+  top: 440px;
+  left: 140px;
+  color: #fff;
+}
+/*# sourceMappingURL=Tcode.css.map */

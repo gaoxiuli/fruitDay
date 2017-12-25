@@ -1,0 +1,209 @@
+img {
+  border: 0;
+  width: 100%;
+  display: block;
+}
+.cont {
+  margin-top: 8px;
+}
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.my-carousel .v-item {
+  height: 36px;
+  line-height: 36px;
+}
+.sub-title {
+  color: #888;
+  font-size: 14px;
+  padding: 30px 0 18px 0;
+}
+.am-wingblank.am-wingblank-lg {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.WingBlank {
+  height: 177px;
+}
+.WingBlank img {
+  height: 177px;
+}
+.num1 img {
+  height: 40px;
+  width: 100%;
+  display: block;
+}
+div {
+  display: block;
+}
+.num2 .num2_one {
+  padding-bottom: 5px;
+  padding: 0 5px;
+}
+.num2 .num2_one a {
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 2px 1px;
+  height: 100%;
+  float: left;
+}
+.num2 .num2_one a img {
+  height: 95px;
+  display: block;
+  width: 195px;
+}
+.num3 {
+  margin-top: 3px;
+  margin: 0 5px;
+  overflow: hidden;
+}
+.num3 .left {
+  width: 49%;
+  margin-right: 3px;
+  float: left;
+}
+.num3 .left img {
+  height: 253px;
+  max-width: 100%;
+}
+.num3 .right {
+  width: 49%;
+  float: left;
+}
+.num3 .right a {
+  display: block;
+}
+.num3 .right a img {
+  height: 127px;
+  max-width: 100%;
+}
+.num4 .num4_one {
+  margin-top: 4px;
+}
+.num4 .num4_one a {
+  height: 64px;
+  line-height: 64px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+.num4 .num4_one a h2 {
+  font-size: 17px;
+  font-weight: normal;
+  color: #000000;
+}
+.num4 .num4_one a h2 .icon-jiantou {
+  margin-left: 13px;
+  font-size: 13px;
+}
+.num5 .pip {
+  position: relative;
+  padding: 12px 25px;
+  height: 160px;
+  border: 1px solid gainsboro;
+  display: block;
+}
+.num5 .pip .left {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+}
+.num5 .pip .left img {
+  height: 120px;
+  width: 120px;
+}
+.num5 .pip .right {
+  float: left;
+  height: auto;
+  margin-left: 25px;
+  position: relative;
+  width: 55%;
+}
+.num5 .pip .right h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 17px;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: normal;
+  margin-top: 23px;
+}
+.num5 .pip .right p {
+  margin-bottom: 5px;
+  color: #878787;
+}
+.num5 .pip .right .new {
+  display: block;
+  background: #ff8a65;
+  color: #fff;
+  height: 22px;
+  width: 60px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 22px;
+}
+.num5 .pip .right .price {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.num5 .pip .right .price span {
+  display: block;
+  float: left;
+  color: #ff8000;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+.num5 .pip .right .price span em {
+  font-size: 12px;
+  color: #ff8000;
+}
+.num5 .pip .right .price .icon-gengduo {
+  float: right;
+  color: #ff8000;
+  font-size: 27px;
+  margin-top: -7px;
+}
+.num6 ul {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.num6 ul li {
+  width: 112px;
+  margin: 8px 10px;
+  float: left;
+}
+.num6 ul li .left img {
+  margin: 8px auto;
+  height: 96px;
+  width: 96px;
+}
+.num6 ul li .right p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #3a3a3a !important;
+}
+.num6 ul li .right .prices {
+  position: relative;
+}
+.num6 ul li .right .prices span {
+  color: #ff8000;
+}
+.num6 ul li .right .prices .icon-gengduo {
+  color: #ff8000;
+  font-size: 27px;
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+}
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,29 @@
+@import './../lib/reset.scss';
+.hcart{
+    display: flex;
+    width: 100%;
+    height: 44px;
+    color: #75a739;
+    background: #fff;
+    span{
+        display: flex;
+        align-items: center;
+        width: 33%;
+        height: 100%;
+        .icon-arrow-left-copy{
+            font-size: 24px;
+        }
+    }
+    .cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        
+    }
+    .rcart{
+        display: flex;
+        align-items: center;
+        justify-content:flex-end ;
+    }
+}

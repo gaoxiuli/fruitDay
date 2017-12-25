@@ -1,0 +1,58 @@
+@import './lib/reset.scss';
+
+html,body,#root,.container{
+    @include rect(100%, 100%);
+    @include bgcolor(#fff);
+}
+
+.container{
+    @include flexbox();
+    @include flex-direction(column);
+    justify-content: space-between;
+    align-content: center;
+    header#header{
+        @include rect(100%, 0.44rem);
+        @include bgcolor(transparent);
+    }
+    #content{
+        @include flex();
+        @include rect(100%, auto);
+        overflow-y: auto;
+        flex: 1;
+    }
+    footer#footer{
+        @include rect(100%, 0.5rem);
+        @include bgcolor(#fff);
+        box-shadow: 0 3px 3px 3px rgba(0,0,0,0.2);
+        ul{
+            @include rect(100%, 100%);
+             @include flexbox();
+            li{
+                @include flex();
+                @include rect(auto, 100%);
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items();
+                @include justify-content();
+                a{
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items();
+                    @include justify-content();
+                    @include textcolor(#333);
+                    li{
+                        @include fontsize(22px);
+                    }
+                    &.active{
+                    @include textcolor(#65a032);
+                }
+                }
+                
+            }
+        }
+    }
+}
+button{
+    width: 50px;
+    height: 50px;
+}

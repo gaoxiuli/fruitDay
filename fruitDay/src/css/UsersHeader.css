@@ -1,0 +1,60 @@
+.usersHead {
+  width: 100%;
+  height: 190px;
+  background: url(../image/login-bg.png) no-repeat;
+}
+.usersHead .usersTop {
+  width: 100%;
+  margin: 0 auto;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.usersHead .usersTop .img {
+  width: 91px;
+  height: 61px;
+  background: url(../image/pic1.png) no-repeat;
+}
+.usersHead .usersTop .info {
+  width: 50%;
+  text-align: left;
+  font-size: 18px;
+}
+.usersHead .usersTop .info span {
+  display: block;
+  text-align: center;
+  line-height: 18px;
+  width: 70px;
+  height: 18px;
+  font-size: 12px;
+  background-color: #ff8000;
+  color: #fff;
+  border-radius: 5px;
+}
+.usersHead .usersTop #er {
+  width: 30px;
+  display: block;
+  color: #878787;
+  margin-right: 10px;
+}
+.usersHead .usersTop #er i {
+  font-size: 30px;
+  display: block;
+}
+.usersHead .usersTop #er span {
+  font-size: 12px;
+}
+.usersHead .kindList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.usersHead .kindList em {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #ff8000;
+}
+/*# sourceMappingURL=UsersHeader.css.map */

@@ -1,0 +1,124 @@
+.eva {
+  width: 100%;
+}
+.eva .goodEva {
+  width: 100%;
+  height: 96px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.eva .goodEva .qu-goodEva {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #FF8000;
+  margin-left: 15px;
+  text-align: center;
+}
+.eva .goodEva .qu-goodEva span {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 3px;
+}
+.eva .goodEva .star {
+  margin-left: 30px;
+}
+.eva .goodEva .star p {
+  display: flex;
+  margin-top: 10px;
+}
+.eva .goodEva .star p img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.eva .evaCount {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.eva .evaCount .evaCount-main {
+  display: flex;
+  width: 222px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #FF8000;
+}
+.eva .evaCount .evaCount-main span {
+  width: 110px;
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  text-align: center;
+}
+.eva .evaCount .evaCount-main span:nth-child(1) {
+  color: #FFFFFF;
+  background-color: #FF8000;
+}
+.eva .evaCount .evaCount-main span:nth-child(2) {
+  color: #FF8000;
+}
+.eva .eva-bottom {
+  background-color: #fff;
+}
+.eva .eva-bottom .eva-bot-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.eva .eva-bottom .eva-bot-top span {
+  color: #FF8000;
+  margin-left: 15px;
+}
+.eva .eva-bottom .eva-bot-top p {
+  color: #878787;
+  font-size: 2px;
+  margin-left: 15px;
+}
+.eva .eva-bottom .eva-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.eva .eva-bottom .eva-info .eva-info1 img {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+}
+.eva .eva-bottom .eva-info .eva-info1 span {
+  margin-left: 15px;
+}
+.eva .eva-bottom .eva-info span {
+  margin-right: 10px;
+  color: #878787;
+}
+.eva .eva-bottom p {
+  width: 100%;
+}
+.eva .eva-bottom p span {
+  color: #878787;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: calc(12px);
+}
+.eva .eva-bottom em {
+  margin-left: 10px;
+}
+.eva .eva-bottom .info-img {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.eva .eva-bottom .info-img img {
+  width: 56px;
+  height: 56px;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=Evalute.css.map */

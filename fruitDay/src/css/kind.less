@@ -1,0 +1,76 @@
+.kindList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .ulList{
+        width: 80px;
+        height: 86%;
+        overflow-y: auto;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 47px;
+        background-color: #f5f5f5;
+        text-align: center;
+        margin: 0;
+        overflow-y: auto;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 78px;
+            height: 42px;
+            line-height: 46px;
+            font-size: 14px;
+            color: #3a3a3a;
+            border-left: 2px solid #f5f5f5;
+            &.active{
+                border-left: 2px solid #65a032;
+                color: #65a032;
+                background-color: #fff;
+            }
+        }
+    }
+    .detailList{
+        width: 298px;
+        height: 100%;
+        margin-left: 78px;
+        margin-top: 3px;
+        background-color: #fff;
+        .kind-top{
+            width: 100%;
+            height: 42px;
+            line-height: 42px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                margin-left: 10px;
+            }
+            em{
+                margin-right: 10px;
+            }
+        }
+        .kind-main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            a{
+                width: 30%;
+                float: left;
+                margin-left: 8px;
+                margin-top: 10px;
+                text-align: center;
+                img{
+                    width: 70.15px;
+                    height: 70.15px;
+                }
+                span{
+                    text-align: center;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

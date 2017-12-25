@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>注册</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>注册</h1>
+    <form >
+      <input type="text" name="username" id="username" value="" />
+      <input type="password" name="password" id="password" value="" />    
+    	<input type="button" id="btn" value="注册"/>
+    </form>
+  </body>
+  <script src="/javascripts/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $("#btn").on("click", function(){
+      $.ajax({
+        type:"post",
+        url:"/login_register/registerAction",
+        data:$("form").serialize(),
+        success:function(data){
+          console.log(data)
+          if(data == "0"){
+            console.log("没有该用户")
+          }else if(data == "1"){
+						console.log("修改成功")
+          }else if(data == "2"){
+            console.log("数据库错误")
+          }
+        }
+      });
+    })
+  </script>
+</html>

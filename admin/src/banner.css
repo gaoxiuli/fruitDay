@@ -1,0 +1,153 @@
+.banner {
+  width: 100%;
+}
+.banner .bans,
+.banner .addBanner {
+  margin: 2%;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+.banner .bans .panel-head,
+.banner .addBanner .panel-head,
+.banner .bans .addBannerTop,
+.banner .addBanner .addBannerTop {
+  background: #FCFCFC;
+  line-height: 40px;
+  padding-left: 3%;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+}
+.banner .bans .tj a,
+.banner .addBanner .tj a {
+  display: inline-block;
+  width: 100px;
+  padding: 6px;
+  color: #f60;
+  border: 1px solid #f60;
+  border-radius: 2px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+.banner .bans .table,
+.banner .addBanner .table {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.banner .bans .table .tableTop,
+.banner .addBanner .table .tableTop {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+}
+.banner .bans .table .proBanner,
+.banner .addBanner .table .proBanner {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  padding: 5px;
+}
+.banner .bans .table .proBanner img,
+.banner .addBanner .table .proBanner img {
+  margin-top: 5px;
+}
+.banner .bans .table .proBanner .button-group,
+.banner .addBanner .table .proBanner .button-group {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+}
+.banner .bans .table .proBanner .button-group .button,
+.banner .addBanner .table .proBanner .button-group .button {
+  line-height: 40px;
+  display: inline-block;
+  height: 100%;
+  width: 48%;
+}
+.banner .bans .table .proBanner .button-group .border-main,
+.banner .addBanner .table .proBanner .button-group .border-main {
+  border: 1px solid #0ae;
+  border-bottom-left-radius: 5px;
+  color: #0ae;
+  border-top-left-radius: 5px;
+  border-right: none;
+}
+.banner .bans .table .proBanner .button-group .border-main:hover,
+.banner .addBanner .table .proBanner .button-group .border-main:hover {
+  background: #0ae;
+  color: #fff;
+}
+.banner .bans .table .proBanner .button-group .border-red,
+.banner .addBanner .table .proBanner .button-group .border-red {
+  border: 1px solid red;
+  border-bottom-right-radius: 5px;
+  color: red;
+  border-top-right-radius: 5px;
+}
+.banner .bans .table .proBanner .button-group .border-red:hover,
+.banner .addBanner .table .proBanner .button-group .border-red:hover {
+  background: red;
+  color: #fff;
+}
+.banner .bans .add,
+.banner .addBanner .add {
+  padding-left: 3%;
+}
+.banner .bans .add p,
+.banner .addBanner .add p {
+  font-size: 14px;
+  line-height: 60px;
+}
+.banner .bans .add p lable,
+.banner .addBanner .add p lable {
+  display: inline-block;
+  width: 60px;
+  vertical-align: middle;
+  text-align: right;
+  margin-right: 10px;
+}
+.banner .bans .add p input,
+.banner .addBanner .add p input {
+  border-color: #ccc;
+  border: none;
+  border: 1px solid #ccc;
+  outline: none;
+  line-height: 40px;
+  border-radius: 4px;
+  padding-left: 4px;
+}
+.banner .bans .add p span,
+.banner .addBanner .add p span {
+  font-size: 12px;
+  padding-left: 10px;
+  color: red;
+  display: none;
+}
+.banner .bans .add p textarea,
+.banner .addBanner .add p textarea {
+  vertical-align: middle;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  height: 150px;
+}
+.banner .bans .add p a,
+.banner .addBanner .add p a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background: #0ae;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+}
+/*# sourceMappingURL=banner.css.map */

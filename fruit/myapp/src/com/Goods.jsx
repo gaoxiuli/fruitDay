@@ -2,60 +2,73 @@ import React from 'react'
 import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile';
 import './../css/goods.css'
 import $ from 'jquery'
+import MyAjax from './../md/MyAjax.js'
 class Goods extends React.Component {
   constructor(props){
     super(props)
+    this.getData = this.getData.bind(this)
     this.state = {
-    	data:[]
+    	proItem:[],
+    	pro:'',
+    	goodsID:''
     }
   }
   componentWillMount(){
-  	var url = 'http://10.9.160.202:8000/kind/homeDetails';
-  	$.ajax({
-  		type:"get",
-  		url:"http://10.9.160.202:8000/kind/homeDetails",
-			success:function(data){
-				console.log(data)
-			}
-  	});
+  	console.log(this)
+		var id = this.props.match.params.id
+		this.getData(id)
   }
+  getData(id){
+		var that = this;
+		var url = 'http://10.9.160.202:8000/kind/homeDetails'
+		MyAjax.getData(url,{
+			params:{
+				detail_ID:id
+			}
+		},(data)=>{
+			if(data == 0 ){
+				this.setState({
+					proItem:[]
+				})
+			}else{
+				console.log(eval(data))
+				this.setState({
+					proItem:eval(data),
+					id:eval(data)[0].id,
+					pro:eval(data)[0]
+				})	
+			}
+		})
+	}
+  
   render(){
     return (
       <div className="goods">
-      	 <Carousel
-          autoplay={false}
-          infinite
-          selectedIndex={1}
-          beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-          afterChange={index => console.log('slide to', index)}
-        >
-          {this.state.data.map(ii => (
-            <a
-              key={ii}
-              href="http://www.alipay.com"
-              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-            >
-              <img
-                src={`https://zos.alipayobjects.com/rmsportal/${ii}.png`}
-                alt=""
-                style={{ width: '100%', verticalAlign: 'top' }}
-                onLoad={() => {
-                  // fire window resize event to change height
-                  window.dispatchEvent(new Event('resize'));
-                  this.setState({ imgHeight: 'auto' });
-                }}
-              />
-            </a>
-          ))}
-        </Carousel>
+      	 <WingBlank>
+		        <Carousel
+		          autoplay={true}
+		          infinite
+		          selectedIndex={1}
+		        >
+		          {this.state.proItem.map((item,index) => (
+		            <a
+		              key={item.banner_ad_id}
+		              href="http://www.alipay.com"
+		              style={{ display: 'inline-block', width: '100%', height: '177px' }}
+		            >
+		              <li key={item.banner_ad_id}><img src={item.image} style={{ width: '100%', verticalAlign: 'top' }}/></li>
+		            </a>
+		          ))}
+		        </Carousel>
+		      </WingBlank>
         <div className="goods-words">
-        	<h3>智利甜心樱桃</h3>
-        	<h5>J级樱桃&nbsp;空运最新到货&nbsp;甜脆依旧</h5>
+        	<h3>{this.state.pro.title}</h3>
+        	<h5>{this.state.pro.subtitle}</h5>
         	<div className="price">
-        		￥<span>49</span>.9<em>￥49.90</em>
+        		￥<span>{this.state.pro.price}</span><em>￥{this.state.pro.price}</em>
         	</div>
         	<div className="weight">
-        		<span>500g</span><br/>
+        		<span>{this.state.pro.volume}</span><br/>
         		<span>明日达</span>
         	</div>
         	<h4>最快12月22日09:00-18:00送达</h4>
@@ -91,6 +104,7 @@ class Goods extends React.Component {
         		很不错,新鲜,甜
         	</p>
         </div>
+        <div data-ID = {this.state.goodsID}></div>
       </div>
     )
   }

@@ -3,10 +3,11 @@ import {Route,Switch,Redirect,NavLink} from 'react-router-dom'
 import MyAjax from './md/MyAjax.js'
 import Header from './com/Header.jsx'
 import Goods from './com/Goods.jsx'
-import Evalute from './com/Evalute.jsx'
-import Xiang from './com/Xiang.jsx'
+import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile';
 import NoMatch from './com/NoMatch.jsx';
 import FooterD from './com/FooterD.jsx';
+import Xiang from './com/Xiang.jsx';
+import Evalute from './com/Evalute.jsx';
 class Detail extends React.Component {
   constructor(props){
     super(props)
@@ -30,7 +31,6 @@ class Detail extends React.Component {
 				detail_ID:id
 			}
 		},(data)=>{
-			console.log(data)
 			if(data == 0 ){
 				this.setState({
 					proItem:[]
@@ -48,14 +48,16 @@ class Detail extends React.Component {
   	return (
   		<div className = "container">
           <header id="header">
-          	<Header/>
+	      		<Switch>
+	      			<Route path='/detail/:id' component = {Header} />
+	      		</Switch>
           </header>
           <div id='content'>
-            <Switch>
-              <Route path='/detail/:this.state.detail_ID/goods' component = {Goods} />
-              <Route path='/detail/:this.state.detail_ID/xiang' component = {Xiang} />
-              <Route path='/detail/:this.state.detail_ID/evalute' component = {Evalute} />
-            </Switch>
+        		<Switch>
+	      			<Route path='/detail/:id/goods' component = {Goods} />
+	      			<Route path='/detail/:id/xiang' component = {Xiang} />
+	      			<Route path='/detail/:id/evalute' component = {Evalute} />
+	      		</Switch>
           </div>
           <footer id="footer">
               <FooterD />

@@ -75,6 +75,13 @@ class Evalute extends React.Component {
       		<img src="https://apicdn.fruitday.com/img/comment/171223/tv23HC/photo2.jpg" />
       		</div>
       	</div>
+      	<div className="footD">
+			  	<div></div>
+			    <p><i className="iconfont icon-gouwuche"></i></p>
+			    <div className="addcart">
+			    	明日达<span>加入购物车</span>
+			    </div>
+	  		</div>
       </div>
     )
   }

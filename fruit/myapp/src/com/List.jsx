@@ -11,22 +11,18 @@ class List extends React.Component {
   }
   getData(id){
     console.log("id" + id+ "的数据")
-    
     var that = this;
     var url = 'http://10.9.160.202:8000/kind/getKindList';
-    
     MyAjax.getData(url, {
       params:{
         prolistID: id
       }
     }, (data) => {
     	console.log(data)
-//	    console.log(eval(data))
 	    that.setState({
 	      list:data[0].pro
 	    })
     })
-    
   }
   //第一次进来获取一下值  ----  classID   --- ajax请求
   componentWillMount(){
@@ -44,11 +40,10 @@ class List extends React.Component {
   
   render(){
     var arr = []
-    var brr = []
     console.log(this.state.list)
     if(this.state.list.length > 0){
       this.state.list.map((item, index) => {
-        arr.push(<Link to={"/detail/" + item.id} key={item.id}>
+        arr.push(<Link to={"/list2/" + item.id} key={item.id}>
         <img src={item.class_photo}/><br />
         <span>{item.name}</span>
         </Link>)

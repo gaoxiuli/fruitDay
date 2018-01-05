@@ -59,9 +59,6 @@ class Detail extends React.Component {
 	      			<Route path='/detail/:id/evalute' component = {Evalute} />
 	      		</Switch>
           </div>
-          <footer id="footer">
-              <FooterD />
-          </footer>
       </div>
   	)
   }

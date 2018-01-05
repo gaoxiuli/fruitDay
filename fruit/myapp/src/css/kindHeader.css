@@ -1,4 +1,6 @@
 .search {
+  width: 100%;
+  align-items: center;
   margin: 8px;
   color: #878787;
   background-color: #eee;

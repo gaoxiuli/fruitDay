@@ -8,7 +8,11 @@ class LoginHeader extends React.Component {
   }
   render(){
     return (
-      <div>登录头部</div>
+       <div className="uHead">
+      	<i className="iconfont icon-arrow-left"></i>
+      	<p>注册</p>
+      	<div></div>
+      </div>
     )
   }
 }

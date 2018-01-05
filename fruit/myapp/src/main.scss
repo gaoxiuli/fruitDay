@@ -4,7 +4,6 @@ html,body,#root,.container{
     @include rect(100%, 100%);
     @include bgcolor(#fff);
 }
-
 .container{
     @include flexbox();
     @include flex-direction(column);

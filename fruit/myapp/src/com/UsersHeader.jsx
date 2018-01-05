@@ -9,6 +9,9 @@ class UsersHeader extends React.Component {
 clicUser(){
 	
 }
+	tCode(){
+		this.props.history.push("/tCode")
+	}
   render(){
     return (
       <div className="usersHead">
@@ -18,7 +21,7 @@ clicUser(){
       			<p onClick={this.clicUser.bind(this)}>{localStorage.getItem("user")}</p>
       			<span>签到送好礼</span>
       		</div>
-      		<p id="er">
+      		<p id="er" onClick={this.tCode.bind(this)}>
       			<i className="iconfont icon-erweimaicon"></i>
       			<span>会员码</span>
       		</p>

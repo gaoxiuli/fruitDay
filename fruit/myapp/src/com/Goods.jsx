@@ -31,7 +31,6 @@ class Goods extends React.Component {
 					proItem:[]
 				})
 			}else{
-				console.log(eval(data))
 				this.setState({
 					proItem:eval(data),
 					id:eval(data)[0].id,
@@ -40,7 +39,9 @@ class Goods extends React.Component {
 			}
 		})
 	}
-  
+  addCart(){
+  	alert(1)
+  }
   render(){
     return (
       <div className="goods">
@@ -105,6 +106,13 @@ class Goods extends React.Component {
         	</p>
         </div>
         <div data-ID = {this.state.goodsID}></div>
+        <div className="footD">
+			  	<div></div>
+			    <p><i className="iconfont icon-gouwuche"></i></p>
+			    <div className="addcart" onClick={this.addCart.bind(this)}>
+			    	明日达<span>加入购物车</span>
+			    </div>
+	  		</div>
       </div>
     )
   }

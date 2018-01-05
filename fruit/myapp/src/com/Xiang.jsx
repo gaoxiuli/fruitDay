@@ -35,7 +35,14 @@ class Xiang extends React.Component {
       	<img src="https://imgjd4.fruitday.com/up_images/20171201/15121313449859.jpg" />
       	<img src="https://imgjd4.fruitday.com/up_images/20171201/15121313452613.jpg" />
       	<img src="https://imgjd8.fruitday.com/up_images/20171220/1513762362174.jpg" />
-      </div>
+     		<div className="footD">
+			  	<div></div>
+			    <p><i className="iconfont icon-gouwuche"></i></p>
+			    <div className="addcart">
+			    	明日达<span>加入购物车</span>
+			    </div>
+	  		</div>
+     </div>
     )
   }
 }

@@ -65,7 +65,7 @@ class User extends React.Component {
 			if(data == 1){
   			alert("登录成功")
 				localStorage.setItem("user",that.refs.username.value)
-				window.history.back();
+				that.props.history.push('/users');
   		}else if(data == 0){
   			alert("用户未注册")
   		}else if(data == 2){

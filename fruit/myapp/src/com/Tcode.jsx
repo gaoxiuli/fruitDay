@@ -27,6 +27,7 @@ class Login extends React.Component {
   				<img src={code} id="code"/>
   				<em>每30秒自动刷新</em>
   			</div>
+  			<div id="bgcolor"></div>
       </div>
     )
   }

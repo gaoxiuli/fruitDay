@@ -30,4 +30,9 @@
   left: 140px;
   color: #fff;
 }
+.main-code #bgcolor {
+  width: 100%;
+  height: 360px;
+  background-color: #02b882;
+}
 /*# sourceMappingURL=Tcode.css.map */
